@@ -2,7 +2,7 @@ Billboard Hot 100 has witnessed the rise and fall of various music genres and au
 
 This project scraped the [Billboard Hot 100 chart](https://www.billboard.com/charts/hot-100) from its very first issue dated Aug 2nd, 1958 to the chart of Feb 1st, 2020, including the title, the artist, the trend (*New*, *Steady*, *Rising*, or *Failing*), and the specific position change of each song on chart. I first crafted some basic metrics (such as # of *New Entry*s, # of *Steady* songs, and average position change) to measure the *fluidity* of the chart, but found some contradictary evidences to this question. Then I shifted my focus to the top part of the chart (Top 10/Top 40) as the public were more exposed to this info thus this may influence how stagnant they feel the chart was. Several metrics, namely # of songs made it to top 10/top 40, and the distribution of duration on top10/top 40, turned out to be revealing in resolving the contradiction and answering why people found the chart more stagnant. 
 
-Table of Content  
+**Table of Content**  
 [Part I: Get the Data](#part-i-get-the-data)  
 [Part II: The *New*s of Hot 100](#part-ii-the-news-of-hot-100)  
 [Part III: The *Steady*s of Hot 100](#part-iii-the-steadys-of-hot-100)  
@@ -10,6 +10,11 @@ Table of Content
 [Part V: The *Tenure* of Songs](#part-v-the-tenure-of-songs)
 
 ## Part I: Get the Data
+Two *Python* libs were employed to scraped the [Billboard Hot 100 chart](https://www.billboard.com/charts/hot-100) history: *requests* and *bs4* (BeautifulSoup). To avoid being blocked by Billboard website, I set up a 5 seconds sleep time between each visit and let the script run for a whole night. The final data consisted of three datasets: title_df contained the title and artist info, change_df stored the position change info, and trend_df tracked the trend info (*New*, *Steady*, *Rising*, or *Failing*). Each dataset had 3210 columns and 100 rows (weekly Hot 100 from Aug 2nd, 1958 to Feb 1st, 2020). Below are the screenshots of these three datasets.
+
+![Title_df Screenshot](/visuals/title_df_head.png)  
+![Change_df Screenshot](/visuals/change_df_head.png)  
+![Trend_df Screenshot](/visuals/trend_df_head.png)  
 
 ## Part II: The *New*s of Hot 100
 
