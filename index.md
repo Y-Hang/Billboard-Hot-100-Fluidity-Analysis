@@ -29,7 +29,7 @@ Additionally, if we expand the definition of '*Steady*' from no position move to
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/steady_songs_hot100_expanded.html" height="500" width="1000"></iframe>  
 To have a better grasp of this topic, I grouped the 62 years data by decade (actually by every 535 weeks) and counted the '*Steady*'s (0 position move & <= 1 position move) on each position of Top 40. Following chart clearly illustrated that Hot 100 saw more '*Steady*'s on its top part for the last 3 decades that it did for earlier decades. This definitely would make a chart stagnant. However, this happened almost 30 years ago and already became well-received and normal, at least gradually and passively, by the public. I wanted to find out more recent causes and issues. 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/steady_songs_position_decennialy.html" height="350" width="1000"></iframe> 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/steady_songs_position_decennialy_expanded.html" height="350" width="1000"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/steady_songs_position_decennialy_expanded.html" height="350" width="1000"></iframe>  
 **Conclusion**: Hot 100 contained a high amount of '*Steady*' songs for the last 3 decades and the trend seemed set to continue. Interestingly, the chart was having high volumes of '*New*' songs and '*Steady*' songs at the same time for recent decades, which looked contradictary and made it hard to determine whether the chart was getting more and more stagnant. 
 
 ## Part IV: The '*Tenure*' of Songs
