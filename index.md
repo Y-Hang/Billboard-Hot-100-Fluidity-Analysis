@@ -6,7 +6,7 @@ This project scraped the [Billboard Hot 100 chart](https://www.billboard.com/cha
 [Part I: Get the Data](#part-i-get-the-data)  
 [Part II: The '*New*'s in Hot 100](#part-ii-the-news-in-hot-100)  
 [Part III: The '*Steady*'s in Hot 100](#part-iii-the-steadys-in-hot-100)    
-[Part IV: The *Tenure* of Songs](#part-iv-the-tenure-of-songs)
+[Part IV: The '*Tenure*' of Songs](#part-iv-the-tenure-of-songs)
 
 ## Part I: Get the Data
 Two *Python* libs were employed to scraped the [Billboard Hot 100 chart](https://www.billboard.com/charts/hot-100) history: *requests* and *bs4* (BeautifulSoup). To avoid being blocked by Billboard website, I set up a 5 seconds interval between each visit and let the script run for a whole night. The final data consisted of three datasets: title_df contained the title and artist info, change_df stored the position change info, and trend_df tracked the trend info (*New*, *Steady*, *Rising*, or *Failing*). Each dataset had 3210 columns and 100 rows (weekly Hot 100 from Aug 2nd, 1958 to Feb 1st, 2020). Below are the screenshots of title_df, change_df, and trend_df, respectively.
