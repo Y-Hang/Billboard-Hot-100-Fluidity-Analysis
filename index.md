@@ -43,7 +43,7 @@ First graph was the duration of songs in Hot 100, Top 40, Top 10, and Top 1. Lit
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_hot100.html" height="350" width="100%"></iframe>  
 Something started to change when we grouped the data by decade (actually 535 weeks, and for simplicity, I will refer to it as decade): there were huge gaps in the duration distribution among different decades. For the early decades, we could see a belly in the curve with most songs falling between 5 to 15 weeks and a short tail stretched over 20 weeks. However, the belly started to flatten and evetually disappeared in and after 2000s. Conversely, the tail swelled and grew longer that ever. And what's more, an unexpected spike sprang up at 1 week in 2010s. This highly skewed curve gave us a hint: your song was more likely than ever to become either a one-week wonder or a nail house in chart. The same pattern went on when we turned to Top 40 and Top 10 (shown in the appendix).  
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_hot100.html" height="350" width="100%"></iframe> 
-[The reason and analysis on this topic]
+[The reason and analysis on this topic]  
 [The pattern stopped when we checked Top 1]
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_top1.html" height="350" width="100%"></iframe> 
 [Implication of the ending of this pattern]
