@@ -8,7 +8,8 @@ This project scraped the [Billboard Hot 100 chart](https://www.billboard.com/cha
 [Part I: Get the Data](#part-i-get-the-data)  
 [Part II: The '*New*'s in Hot 100](#part-ii-the-news-in-hot-100)  
 [Part III: The '*Steady*'s in Hot 100](#part-iii-the-steadys-in-hot-100)    
-[Part IV: The '*Tenure*' of Songs](#part-iv-the-tenure-of-songs)
+[Part IV: The '*Tenure*' of Songs](#part-iv-the-tenure-of-songs)  
+[Part V: Appendix](#part-v-appendix)
 
 ## Part I: Get the Data
 Two *Python* libs were employed to scraped the [Billboard Hot 100 chart](https://www.billboard.com/charts/hot-100) history: *requests* and *bs4* (BeautifulSoup). To avoid being blocked by Billboard website, I set up a 5 seconds interval between each visit and let the script run for a whole night. The final data consisted of three datasets: title_df contained the title and artist info, change_df stored the position change info, and trend_df tracked the trend info (*New*, *Steady*, *Rising*, or *Failing*). Each dataset had 3210 columns and 100 rows (weekly Hot 100 from Aug 2nd, 1958 to Feb 1st, 2020). Below are the screenshots of title_df, change_df, and trend_df, respectively.
@@ -40,8 +41,15 @@ However, if we look at the same graph for Top 40 and Top 10, something interesti
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/unique_songs_yearly_top40.html" height="350" width="100%"></iframe>  
 First graph was the duration of songs in Hot 100, Top 40, Top 10, and Top 1. Little extra information could this visual provide as most patterns were expected: the longer duration, the fewer songs; and a spike in 20 weeks due to the removal policy mentioned at the beginning of this report. Nothing noticeably unusual. 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_hot100.html" height="350" width="100%"></iframe>  
-Something started to change when we grouped the data by decade (actually 535 weeks, and for simplicity, I will refer to it as decade): there were huge gaps in the duration distribution among different decades. For the early decades, we could see a belly in the curve with most songs falling between 5 to 15 weeks and a short tail stretched over 20 weeks. However, the belly started to flatten and evetually disappeared in and after 2000s. Conversely, the tail swelled and grew longer that ever. And what's more, a spike sprang up at 1 week in 2010s. 
+Something started to change when we grouped the data by decade (actually 535 weeks, and for simplicity, I will refer to it as decade): there were huge gaps in the duration distribution among different decades. For the early decades, we could see a belly in the curve with most songs falling between 5 to 15 weeks and a short tail stretched over 20 weeks. However, the belly started to flatten and evetually disappeared in and after 2000s. Conversely, the tail swelled and grew longer that ever. And what's more, an unexpected spike sprang up at 1 week in 2010s. This highly skewed curve gave us a hint: your song was more likely than ever to become either a one-week wonder or a nail house in chart. The same pattern went on when we turned to Top 40 and Top 10 (shown in the appendix).  
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_hot100.html" height="350" width="100%"></iframe> 
+[The reason and analysis on this topic]
+[The pattern stopped when we checked Top 1]
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_top1.html" height="350" width="100%"></iframe> 
+[Implication of the ending of this pattern]
+
+[Conclusion]
+
+## Part V: Appendix
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_top40.html" height="350" width="100%"></iframe> 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_top10.html" height="350" width="100%"></iframe> 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="visuals/duration_decennialy_top1.html" height="350" width="100%"></iframe> 
